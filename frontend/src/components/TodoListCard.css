@@ -1,0 +1,88 @@
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.todo-stats {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.todo-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+}
+
+.todo-form button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.6rem 1.1rem;
+  background: #ffb703;
+  color: #0a0907;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.todo-form button:hover {
+  opacity: 0.85;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.45rem 0.6rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.todo-list li.done span {
+  text-decoration: line-through;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.todo-list li label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todo-list li button {
+  border: none;
+  background: transparent;
+  color: #ff6b6b;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.status {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+}
+
+.status-error {
+  color: #ffbebe;
+}
