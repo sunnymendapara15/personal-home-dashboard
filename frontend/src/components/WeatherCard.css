@@ -1,0 +1,107 @@
+.weather-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.refresh-pill {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: inherit;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.refresh-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.weather-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.weather-temp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.temp-value {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.temp-label {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.weather-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.weather-form input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  color: inherit;
+}
+
+.weather-form button {
+  border-radius: 12px;
+  border: none;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(135deg, #4fb4ff, #8b5cf6);
+  color: #07070a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.weather-form button:hover {
+  opacity: 0.85;
+}
+
+.status {
+  font-size: 0.9rem;
+}
+
+.status-error {
+  color: #ffbebe;
+}
+
+.status-info {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+@media (max-width: 700px) {
+  .weather-body {
+    flex-direction: column;
+  }
+}
