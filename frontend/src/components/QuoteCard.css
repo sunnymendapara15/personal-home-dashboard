@@ -1,0 +1,47 @@
+.quote-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.quote-refresh {
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quote-refresh:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+blockquote {
+  margin: 1.2rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+blockquote footer {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.status {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.status-error {
+  color: #ffbebe;
+}
