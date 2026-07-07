@@ -1,0 +1,23 @@
+.clock-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clock-time {
+  font-size: clamp(2.5rem, 4vw, 3.25rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.clock-date {
+  margin: 0;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.clock-note {
+  margin-top: auto;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.6);
+}
