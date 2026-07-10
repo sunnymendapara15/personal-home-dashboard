@@ -3,6 +3,16 @@ import ClockCard from './components/ClockCard';
 import WeatherCard from './components/WeatherCard';
 import TodoListCard from './components/TodoListCard';
 import QuoteCard from './components/QuoteCard';
+import CalendarCard from './components/CalendarCard';
+import FitnessTrackerCard from './components/FitnessTrackerCard';
+import NewsFeedCard from './components/NewsFeedCard';
+import UpcomingEventsCard from './components/UpcomingEventsCard';
+import {
+  calendarHighlights,
+  fitnessStats,
+  newsItems,
+  upcomingEvents,
+} from './data/dashboardData';
 
 function App() {
   return (
@@ -20,8 +30,12 @@ function App() {
       <main className="dashboard">
         <ClockCard />
         <WeatherCard />
+        <CalendarCard highlights={calendarHighlights} />
+        <FitnessTrackerCard stats={fitnessStats} />
         <TodoListCard />
         <QuoteCard />
+        <NewsFeedCard news={newsItems} />
+        <UpcomingEventsCard events={upcomingEvents} />
       </main>
     </div>
   );

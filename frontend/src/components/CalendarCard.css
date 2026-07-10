@@ -1,0 +1,61 @@
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.calendar-subtitle {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
+.calendar-weekday {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.calendar-cell {
+  min-height: 72px;
+  border-radius: 14px;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  justify-content: flex-start;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.calendar-cell.today {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.calendar-cell.highlighted {
+  background: rgba(255, 183, 3, 0.15);
+  border: 1px solid rgba(255, 183, 3, 0.75);
+}
+
+.calendar-cell:hover {
+  transform: translateY(-2px);
+}
+
+.calendar-day-number {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.calendar-event {
+  font-size: 0.75rem;
+  color: #ffb703;
+}
